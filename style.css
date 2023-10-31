@@ -1,4 +1,156 @@
 body{
     background-color: #D5D9BA;
+text-align: center;
+}
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap');
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+h1,
+h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 16px;
+}
+
+.button {
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all .3s ease;
+}
+
+
+.primary {
+  background-color: #8005F2;
+  color: #FFF;
+  border: 2px solid #8005F2;
+  /*
+  background: rgb(181,105,252);
+  background: linear-gradient(90deg, rgba(181,105,252,1) 0%, rgba(128,5,242,1) 36%, rgba(181,105,252,1) 100%);*display: ;*/
+}
+
+.primary:hover {
+  background-color: #B569FC;
+  border: 2px solid #B569FC;
+}
+
+.secondary {
+  background-color: transparent;
+  color: #8005F2;
+  border: 2px solid #8005F2;
+}
+
+.secondary:hover {
+  border: 2px solid #B569FC;
+  color: #B569FC;
+}
+
+.avatar {
+  width: 60px;
+  /*  Largeur */
+  height: 60px;
+  /*  Hauteur */
+  border-radius: 50%;
+  border: solid 2px #000;
+}
+
+.link {
+  color: #000;
+  font-weight: 500;
+  transition: all .3s ease;
+}
+
+.link:hover {
+  color: #8005F2;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.card{
+  background: #9900ff;
+  color: white;
+  border-radius: 32px;
+  width: 20vw;
+  max-width: 20vw;
+  min-width: 10vw;
+  height: 20vw;
+  min-height: 10vw;
+  max-height: 20vw;
+
+  transition: all .6s ease;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 16px;
+  -webkit-box-shadow: -4px 4px 28px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -4px 4px 28px 0px rgba(66, 68, 90, 1);
+  box-shadow: -4px 4px 28px 0px rgba(66, 68, 90, 1);
+}
+
+.card i{
+  font-size: 6vw;
+  line-height: 6vw; /* Interlignage */
+}
+
+.card:hover{
+  transform: scale(.9);
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: azure;
+  background-image: url(img/Hero.png);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero h1{
+  font-size: 5vw;
+  margin: 0;
+}
+
+.hero h2{
+  font-size: 2vw;
+  font-weight: 400;
+  margin: 0;
 }
